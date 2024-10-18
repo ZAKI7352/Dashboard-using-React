@@ -30,9 +30,10 @@ const SideNav = () => {
         }}
         h="100vh" 
         justify="space-between"
+        bg="white"
         
         >
-            <Box>
+            <Box >
                 <Heading textAlign="center" fontSize="20px" as="h1" pt="3.5rem">Zaki</Heading>
                 <Box mx="3">
                     {navLinks.map((nav) => (
