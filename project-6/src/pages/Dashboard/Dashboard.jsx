@@ -1,13 +1,15 @@
 import React from 'react'
-import SideNav from '../../components/SideNav'
+import DashboardLayout from '../../components/DashboardLayout'
+import { Container } from '@chakra-ui/react'
 
 
-const Dashboard = () => {
-  return (
-    <div>
-      <SideNav/>
-    </div>
-  )
+
+const Dashboard = ({}) => {
+    return (
+        <DashboardLayout title="Dashboard">         
+        <Container bg="red" maxW="70rem" >How are you </Container>
+        </DashboardLayout>
+    )
 }
 
 export default Dashboard
