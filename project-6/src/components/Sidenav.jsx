@@ -19,7 +19,19 @@ const SideNav = () => {
     ];
 
     return (
-        <Stack boxShadow="lg" w="16rem" h="100vh" justify="space-between">
+        <Stack 
+        boxShadow={{
+            base:'none',
+            lg:'lg'
+        }}
+        w={{
+            base:'full',
+            lg:"16rem" 
+        }}
+        h="100vh" 
+        justify="space-between"
+        
+        >
             <Box>
                 <Heading textAlign="center" fontSize="20px" as="h1" pt="3.5rem">Zaki</Heading>
                 <Box mx="3">
