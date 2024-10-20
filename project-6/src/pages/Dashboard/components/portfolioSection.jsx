@@ -1,5 +1,9 @@
 import React from 'react'
-import { IoMdInformationCircleOutline } from "react-icons/io";
+import {
+  AiOutlineInfoCircle,
+
+} from "react-icons/ai";
+
 import { FaArrowDown, FaArrowUp } from "react-icons/fa6";
 import { HStack, Stack, Text, Icon, Tag, Button } from '@chakra-ui/react'
 
@@ -40,33 +44,43 @@ const PortfolioSection = () => {
 
       >
         <Stack>
-          <HStack color='black.80'>
-            <Text fontSize='14px'>Total Portfolio value</Text>
-            <Icon as={IoMdInformationCircleOutline} />
+          <HStack color="black.80">
+            <Text fontSize="sm">Total Portfolio Value</Text>
+            <Icon as={AiOutlineInfoCircle} />
           </HStack>
-          <HStack>
-            <Text textStyle='h2' fontWeight='medium'>$12458</Text>
-          </HStack>
+          <Text textStyle="h2" fontWeight="medium">
+            ₹ 112,312.24
+          </Text>
         </Stack>
-        <Stack >
-          <HStack spacing={4}
+
+        <Stack>
+          <HStack color="black.80">
+            <Text fontSize="sm">Wallet Balances</Text>
+          </HStack>
+          <HStack
+            spacing={2}
             align={{
-              base: 'flex-start',
-              sm: 'center'
+              base: "flex-start",
+              sm: "center",
             }}
             flexDir={{
-              base: 'column',
-              sm: 'row'
+              base: "column",
+              sm: "row",
             }}
           >
-            <HStack color='black.80'>
-              <Text fontSize='14px'>Wallet Balance</Text>
+            <HStack>
+              <Text textStyle="h2" fontWeight="medium">
+                22.39401000
+              </Text>{" "}
+              <Tag colorScheme="gray" fontWeight="medium">
+                BTC
+              </Tag>
             </HStack>
             <HStack>
-              <Text textStyle='h2' fontWeight='medium'>$123,245</Text> <Tag colorScheme='gray'>BTC</Tag>
-            </HStack>
-            <HStack>
-              <Text textStyle='h2' fontWeight='medium'>$123,245</Text> <Tag colorScheme='gray'>INR</Tag>
+              <Text textStyle="h2" fontWeight="medium">
+                ₹ 1,300.00
+              </Text>{" "}
+              <Tag colorScheme="gray">INR</Tag>
             </HStack>
           </HStack>
         </Stack>

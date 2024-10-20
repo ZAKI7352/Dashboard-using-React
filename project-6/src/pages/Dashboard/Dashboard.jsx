@@ -1,14 +1,28 @@
 import React from 'react'
 import DashboardLayout from '../../components/DashboardLayout'
-import { Container } from '@chakra-ui/react'
 import PortfolioSection from './components/portfolioSection'
+import PriceSection from './components/PriceSection'
+import { Grid, GridItem } from '@chakra-ui/react'
 
 
 
 const Dashboard = ({ }) => {
     return (
         <DashboardLayout title="Dashboard">
-            <PortfolioSection />
+            <Grid gridTemplateColumns={{
+                base: 'repeat(1,1fr)',
+                md: 'repeat(2,1fr)'
+            }}
+            gap='6'
+            >
+                <GridItem colSpan='2'>
+                    <PortfolioSection />
+                </GridItem>
+                <GridItem colSpan='1'>
+                    <PriceSection />
+                </GridItem>
+            </Grid>
+            
         </DashboardLayout>
     )
 }
