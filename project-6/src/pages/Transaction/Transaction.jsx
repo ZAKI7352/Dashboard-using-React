@@ -1,11 +1,10 @@
 import React from 'react'
+import DashboardLayout from '../../components/DashboardLayout'
 
-const Transaction = () => {
+const TransactionPage = () => {
   return (
-    <div>
-      Transaction
-    </div>
+      <DashboardLayout> Transaction  </DashboardLayout>
   )
 }
 
-export default Transaction
+export default TransactionPage
